@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Vue Element Admin',
+  title: '通用权限管理系统',
 
   /**
    * @type {boolean} true | false
