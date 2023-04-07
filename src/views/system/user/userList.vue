@@ -76,6 +76,7 @@
             icon="el-icon-plus"
             size="small"
             type="success"
+            v-if="hasPermission('sys:user:add')"
             @click="openAddWindow()"
             >新增</el-button
           >
@@ -186,6 +187,7 @@
               </el-radio-group>
             </el-form-item>
             <br />
+
             <!-- 用户头像 -->
             <el-form-item label="头像">
               <el-upload

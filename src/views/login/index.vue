@@ -45,7 +45,9 @@
         </el-form-item>
       </el-tooltip>
 
-      <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">登录</el-button>
+      <el-button :loading="loading" type="primary" style="width:55%;margin-bottom:30px;" @click.native.prevent="handleLogin">登录</el-button>
+      <el-button :loading="loading" type="primary" style="width:40%;margin-bottom:30px;margin-left:20px" @click="$router.push('/register')">注册</el-button>
+      <!-- <span class="zhuce">没有账号？ <a href="/register" style="color:aqua">立即注册</a></span> -->
     </el-form>
   </div>
 </template>
@@ -178,6 +180,9 @@ $cursor: #fff;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     color: #454545;
+  }
+  .zhuce{
+    color: #fff;
   }
 }
 </style>

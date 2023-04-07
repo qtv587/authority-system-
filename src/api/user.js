@@ -9,6 +9,9 @@ export async function login(data) {
   return await http.login("/api/user/login", data);
 }
 
+export async function register(data) {
+  return await http.login("/api/user/register", data);
+}
 /**
  * 获取用户信息
  * @param {*} token

@@ -27,6 +27,7 @@ import resetForm from "@/utils/resetForm";
 import objCopy from "@/utils/objCopy";
 //导入按钮权限判断
 import hasPermission from "@/permission/index";
+
 Vue.prototype.hasPermission = hasPermission;
 Vue.prototype.$objCopy = objCopy;
 Vue.prototype.$resetForm = resetForm;
